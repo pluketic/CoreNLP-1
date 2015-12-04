@@ -1,3 +1,33 @@
+Stanford CoreNLP Extensions 
+===========================
+
+This fork of Stanford CoreNLP provides extensions to use jMWE. It is developed by Tomasz Oliwa at the Center for Research Informatics (CRI), University of Chicago.
+
+License information: 
+
+This fork has the same license as the original Stanford CoreNLP, which states on https://github.com/stanfordnlp/CoreNLP :
+"The Stanford CoreNLP code is written in Java and licensed under the GNU General Public License (v3 or later)."
+
+The jMWE files (not included here, available from http://projects.csail.mit.edu/jmwe/ ) have the following note on their page:
+"The software is distributed under the Creative Commons Attribution 4.0 International License that makes it free to use for any purpose, as long as proper copyright acknowledgement is made."
+
+Name, copyright and other acknowledgements for "jMWE" from http://projects.csail.mit.edu/jmwe/ under the http://creativecommons.org/licenses/by/4.0/ : 
+
+Finlayson, M.A. and Kulkarni,
+N. (2011) Detecting Multi-Word Expressions Improves Word Sense
+Disambiguation, Proceedings of the 8th Workshop on Multiword Expressions,
+Portland, OR. pp. 20-24. 
+
+Kulkarni, N. and Finlayson, M.A. jMWE: A Java
+Toolkit for Detecting Multi-Word Expressions, Proceedings of the 8th Workshop
+on Multiword Expressions, Portland, OR. pp. 122-124.
+
+Hereby proper copyright acknowledgement is made as required. 
+
+The GNU Project states that GPL and the Creative Commons Attribution 4.0 license are compatible: http://www.gnu.org/licenses/license-list.en.html#OtherLicenses
+
+Original Stanford CoreNLP notes:
+
 Stanford CoreNLP
 ================
 
