@@ -232,6 +232,9 @@
     <jar destfile="javanlp-core.jar">
       <fileset dir="${project.core}/classes" />
     </jar>
+    <jar destfile="javanlp-src-core.jar">
+      <fileset dir="${source.path}" includes="**/*.java"/>
+    </jar>    
   </target>
 
   <!-- I wrote this for a side project, so if you one day see it in a
