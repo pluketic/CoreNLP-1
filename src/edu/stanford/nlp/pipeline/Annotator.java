@@ -1,5 +1,6 @@
 package edu.stanford.nlp.pipeline;
 
+import edu.stanford.nlp.pipeline.Annotator.Requirement;
 import edu.stanford.nlp.util.ArraySet;
 
 import java.util.*;
@@ -33,6 +34,7 @@ import java.util.*;
  * for both requires() and requirementsSatisfied().
  *
  * @author Jenny Finkel
+ * @author Tomasz Oliwa (added the JMWE_REQUIREMENT)
  */
 public interface Annotator {
 
@@ -110,6 +112,7 @@ public interface Annotator {
   String STANFORD_OPENIE = "openie";
   String STANFORD_QUOTE = "quote";
   String STANFORD_UD_FEATURES = "udfeats";
+  String STANFORD_JMWE = "jmwe";
 
   Requirement TOKENIZE_REQUIREMENT = new Requirement(STANFORD_TOKENIZE);
   Requirement CLEAN_XML_REQUIREMENT = new Requirement(STANFORD_CLEAN_XML);
@@ -130,6 +133,7 @@ public interface Annotator {
   Requirement OPENIE_REQUIREMENT = new Requirement(STANFORD_OPENIE);
   Requirement QUOTE_REQUIREMENT = new Requirement(STANFORD_QUOTE);
   Requirement UD_FEATURES_REQUIREMENT = new Requirement(STANFORD_UD_FEATURES);
+  Requirement JMWE_REQUIREMENT = new Requirement(STANFORD_JMWE);
 
   /**
    * A map from annotator name to a set of requirements for that annotator.
@@ -247,6 +251,12 @@ public interface Annotator {
         add(POS_REQUIREMENT);
         add(DEPENDENCY_REQUIREMENT);
       }}));
+      put(STANFORD_JMWE, Collections.unmodifiableSet(new HashSet<Requirement>() {{
+          add(TOKENIZE_REQUIREMENT);
+          add(SSPLIT_REQUIREMENT);
+          add(POS_REQUIREMENT);
+          add(LEMMA_REQUIREMENT);
+        }}));
   }});
 
   /**

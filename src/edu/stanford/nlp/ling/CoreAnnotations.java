@@ -1,5 +1,7 @@
 package edu.stanford.nlp.ling;
 
+import edu.mit.jmwe.data.IMWE;
+import edu.mit.jmwe.data.IToken;
 import edu.stanford.nlp.util.*;
 
 import java.util.Calendar;
@@ -174,6 +176,17 @@ public class CoreAnnotations {
    */
   public static class QuotationsAnnotation implements CoreAnnotation<List<CoreMap>> {
     public Class<List<CoreMap>> getType() {
+      return ErasureUtils.uncheckedCast(List.class);
+    }
+  }
+  
+  /**
+   * The key for getting the jMWE Annotations
+   * @author Tomasz Oliwa
+   *
+   */
+  public static class JMWEAnnotation implements CoreAnnotation<List<IMWE<IToken>>> {
+    public Class<List<IMWE<IToken>>> getType() {
       return ErasureUtils.uncheckedCast(List.class);
     }
   }
