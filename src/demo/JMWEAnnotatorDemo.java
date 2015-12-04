@@ -55,7 +55,7 @@ public class JMWEAnnotatorDemo {
         props.setProperty("customAnnotatorClass.jmwe.verbose", "false");
         props.setProperty("customAnnotatorClass.jmwe.underscoreReplacement", "-");
         props.setProperty("customAnnotatorClass.jmwe.indexData", index);
-        props.setProperty("customAnnotatorClass.jmwe.detector", "Complex");
+        props.setProperty("customAnnotatorClass.jmwe.detector", "CompositeConsecutiveProperNouns");
         StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
         
         // put the text in the document annotation 
