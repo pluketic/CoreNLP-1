@@ -64,11 +64,11 @@ Done!
 
         ant jar
     
-3. To run the unit tests, run: 
+3. To run the unit tests, you need to edit the ``JMWEAnnotatorTest.java`` and point the ``public static final String index`` variable to the location on your file system where the ``mweindex_wordnet3.0_semcor1.6.data`` file is stored. Then, run: 
 
         ant clean && ant test
         
-Running the unit tests should output something similar to
+Running the unit tests should, among other tests, output something similar to
 
 ```
     [junit] Testsuite: edu.stanford.nlp.pipeline.JMWEAnnotatorTest
