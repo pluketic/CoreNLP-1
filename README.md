@@ -50,7 +50,7 @@ Done!
 
         ant 
 
-2. To run the demo, first create the the jar files with:
+2. To run the demo, first create the jar files with:
 
         ant jar
     
@@ -58,7 +58,7 @@ Done!
 
         ant clean && ant test
         
-Running the units should output something similar to
+Running the unit tests should output something similar to
 
 ```
     [junit] Testsuite: edu.stanford.nlp.pipeline.JMWEAnnotatorTest
@@ -72,7 +72,7 @@ to indicate that all tests have passed.
 
 The class ``JMWEAnnotatorDemo`` in the package ``demo`` shows a basic use case of the new annotator, given a String it will detect and print out MWE information.
 
-If jar files have been created (see above), you can also run the ``runJMWEDemo.sh`` shell script, it can call the ``JMWEAnnotatorDemo`` with a predefined text if no further input is given, or use the commandline first argument input. To get the output as described in the first section, type:
+If jar files have been created (see above), you can also run the ``runJMWEDemo.sh`` shell script, it can call the ``JMWEAnnotatorDemo`` with a predefined text if no further input is given, or use the commandline first argument as input. To get the output as described in the first section, type:
 
 ```./runJMWEDemo.sh "She traveled to Las Vegas and looked up the world record."```
 
@@ -140,7 +140,7 @@ The type of the MWE detector needs to be defined, currently implemented are "Con
 
 ## MWE detectors
 
-[jMWE](http://projects.csail.mit.edu/jmwe/) comes with a straight-forward way to write and combine detectors, filters and resolvers for MWE. A detailed introduction is given in the [jMWE user manual](edu.mit.jmwe_1.0.2_manual.pdf).
+[jMWE](http://projects.csail.mit.edu/jmwe/) comes with a straight-forward way to write and combine detectors, filters and resolvers for MWE discovery. A detailed introduction about this is given in the [jMWE user manual](edu.mit.jmwe_1.0.2_manual.pdf).
 
 The class JMWEAnnotator contains the following method, where the MWE detectors are setup. Adding more detectors is only a matter of adding another switch case and instantiating the desired setup as introduced in the [jMWE user manual](edu.mit.jmwe_1.0.2_manual.pdf).
 
