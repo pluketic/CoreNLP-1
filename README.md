@@ -1,3 +1,13 @@
+## Table of Contents
+**[Stanford CoreNLP Extensions](#stanford-corenlp-extensions)**  
+**[Installation](#installation)**  
+**[Demo](#demo)**  
+**[Annotator properties](#annotator-properties)**  
+**[MWE detectors](#mwe-detectors)**  
+**[License](#license)**  
+**[Author information](#author-information)**  
+**[Original Stanford CoreNLP README](#original-stanford-corenlp-readme)**
+
 # Stanford CoreNLP Extensions
 
 This fork of [Stanford CoreNLP](https://github.com/stanfordnlp/CoreNLP) enables the user to capture Multi-Word Expressions (MWE) from plain text. Under the hood, it uses [jMWE](http://projects.csail.mit.edu/jmwe/), which itself employs a database generated through processing [WordNet](https://wordnet.princeton.edu/).
@@ -215,7 +225,7 @@ Stanford CoreNLP Extensions are developed by Tomasz Oliwa at the Center for Rese
 
 
 
-## Original Stanford CoreNLP README.md 
+## Original Stanford CoreNLP README
 
 Original Stanford CoreNLP README.md from https://github.com/stanfordnlp/CoreNLP :
 
