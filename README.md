@@ -10,7 +10,7 @@
 
 # Stanford CoreNLP Extensions
 
-This fork of [Stanford CoreNLP](https://github.com/stanfordnlp/CoreNLP) enables the user to capture Multi-Word Expressions (MWE) from plain text. Under the hood, it uses [jMWE](http://projects.csail.mit.edu/jmwe/), which itself employs a database generated through processing [WordNet](https://wordnet.princeton.edu/).
+This fork of [Stanford CoreNLP](https://github.com/stanfordnlp/CoreNLP) enables the user to capture Multi-Word Expressions (MWE) from plain text. Under the hood, it integrates [jMWE](http://projects.csail.mit.edu/jmwe/), which itself employs a database generated through processing [WordNet](https://wordnet.princeton.edu/).
 
 For example, given the input sentence 
 
@@ -26,7 +26,7 @@ the detected MWEs information could include:
 
 Detecting MWEs can be useful in a number of applications, such as: 
 
-1. Extracting a subset of n-grams from a corpus for topic modeling and information retrieval purposes.
+1. Extracting a subset of n-grams (collocations) from a corpus for topic modeling and information retrieval purposes.
 2. Word Sense Disambiguation problems, see the publications on [jMWE](http://projects.csail.mit.edu/jmwe/) for more information.
 
 This extension is realized as a [new annotator](http://nlp.stanford.edu/software/corenlp.shtml#newannotators) in Stanford CoreNLP, and can therefore be easily integrated into any further downstream NLP processing the same way as any other already existing CoreNLP annotator.
