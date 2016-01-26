@@ -29,7 +29,9 @@ Detecting MWEs can be useful in a number of applications, such as:
 1. Extracting a subset of n-grams (collocations) from a corpus for topic modeling and information retrieval purposes.
 2. Word Sense Disambiguation problems, see the publications on [jMWE](http://projects.csail.mit.edu/jmwe/) for more information.
 
-This extension is realized as a [new annotator](http://nlp.stanford.edu/software/corenlp.shtml#newannotators) in Stanford CoreNLP, and can therefore be easily integrated into any further downstream NLP processing the same way as any other already existing CoreNLP annotator.
+Within this fork, this extension is realized as a [new annotator](http://nlp.stanford.edu/software/corenlp.shtml#newannotators) in Stanford CoreNLP.
+
+I also provide a standalone Stanford CoreNLP annotator of jMWE at https://github.com/toliwa/CoreNLP-jMWE so that it can easily be integrated into any further downstream NLP processing of existing Stanford CoreNLP projects.
 
 ## Installation
 
